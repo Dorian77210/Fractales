@@ -3,8 +3,8 @@ import java.awt.Color;
 public class Model {
 
     public static final int calculateColor(float x, float y) {
-        float cx = 0.285f;
-        float cy = 0.01f;
+        float cx = Constant.FLOWER_FRACTALE.r;
+        float cy = Constant.FLOWER_FRACTALE.i;
 
         float nx, ny;
         int i;

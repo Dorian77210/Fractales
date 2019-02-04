@@ -1,13 +1,17 @@
 import java.awt.event.MouseWheelListener;
 import java.awt.event.MouseWheelEvent;
 
-public class Controller implements MouseWheelListener {
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+
+public class Controller implements MouseWheelListener, MouseListener {
 
     private View view;
 
     public Controller(View view) {
         this.view = view;
         this.view.addMouseWheelListener(this);
+        this.view.addMouseListener(this);
     }
 
     @Override 
@@ -20,5 +24,32 @@ public class Controller implements MouseWheelListener {
         }
 
         this.view.repaint();
+    }
+
+    @Override 
+    public void mouseClicked(MouseEvent event) {
+        this.view.setPoint(event.getPoint());
+
+        this.view.repaint();
+    }
+
+    @Override 
+    public void mouseReleased(MouseEvent event) {
+
+    }
+
+    @Override 
+    public void mousePressed(MouseEvent event) {
+
+    }
+
+    @Override 
+    public void mouseEntered(MouseEvent event) {
+
+    }
+
+    @Override 
+    public void mouseExited(MouseEvent event) {
+
     }
 }
