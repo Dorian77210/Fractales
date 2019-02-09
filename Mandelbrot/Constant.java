@@ -18,6 +18,9 @@ public class Constant {
     public static final Complex FLOWER_FRACTALE = new Complex(-0.4f, 0.6f);
     public static final Complex SPIRALE_FRACTALE = new Complex(0.285f, 0.013f);
     public static final Complex SPIRALE_FRACTALE2 = new Complex(-0.8f, 0.2f);
-    public static final Complex DRUG_FRACTALE = new Complex(0.285f, 0.01f);
     public static final Complex SPIRALE_FRACTALE3 = new Complex(-0.72f, 0.11f);
+    public static final Complex SPIRALE_FRACTALE4 = new Complex(0.356f, 0.35f);
+
+    public static final Complex SNOW_FRACTALE = new Complex(-0.1011f, 0.9563f);
+
 }
